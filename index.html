@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寝室关系质量评估问卷</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>寝室关系质量评估问卷</h1>
+        </header>
+        <div id="guide" class="section">
+            <h2>问卷指导语</h2>
+            <div class="guide-content">
+                <p>亲爱的同学们，欢迎参与本次寝室关系质量问卷调查！</p>
+                <p>本问卷旨在深入了解大家在宿舍生活中的真实感受，包括情感支持、社交互动、冲突解决、互相尊重、合作共享、归属与安全以及整体满意度等七个方面。你的回答将帮助我们更好地了解宿舍关系现状，为改善宿舍环境提供依据。请根据自己的实际情况，如实填写问卷，每题无对错之分，感谢你的配合与支持！</p>
+                <p>作答方式：点击每题下面提供的数字，数字代表该描述与您实际情况的符合程度：</p>
+                <ul>
+                    <li>1 = 完全不同意</li>
+                    <li>2 = 不同意</li>
+                    <li>3 = 中立</li>
+                    <li>4 = 同意</li>
+                    <li>5 = 完全同意</li>
+                </ul>
+                <p>您的所有回答将被严格保密，收集的数据匿名处理，数据分析仅供学术报告提供支撑。</p>
+                <button id="startSurvey" class="btn">开始答题</button>
+            </div>
+        </div>
+        <form id="surveyForm" class="section hidden">
+            <div id="userInfo">
+                <label>姓名：<input type="text" name="name" required></label>
+                <label>性别：<input type="text" name="gender" required></label>
+                <label>宿舍号：<input type="text" name="dorm" required></label>
+            </div>
+            <div id="questions"></div>
+            <button type="submit" class="btn">提交问卷</button>
+        </form>
+        <div id="report" class="section hidden">
+            <h2>宿舍关系质量评估报告</h2>
+            <div id="reportContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
